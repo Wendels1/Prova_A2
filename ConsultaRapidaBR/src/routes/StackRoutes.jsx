@@ -10,6 +10,7 @@ export default function StackRoutes() {
     <Stack.Navigator>
       <Stack.Screen name="ListaCeps" component={ListaCepsScreen} options={{ title: 'Lista de CEPs' }} />
       <Stack.Screen name="SalvarCep" component={SalvarCepScreen} options={{ title: 'Salvar CEP' }} />
+      <Stack.Screen name="EditarCep" component={SalvarCepScreen} options={{ title: 'Editar CEP' }} />
     </Stack.Navigator>
   );
 }
