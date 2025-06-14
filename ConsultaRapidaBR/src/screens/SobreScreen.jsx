@@ -1,24 +1,27 @@
 import React from 'react';
-import { ScrollView, StyleSheet } from 'react-native';
-import { Card, Text } from 'react-native-paper';
+import { ScrollView, StyleSheet, Text } from 'react-native';
+import { Card, Title } from 'react-native-paper';
 
 export default function SobreScreen() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Card>
         <Card.Content>
-          <Text variant="titleLarge">Sobre o Aplicativo</Text>
+          <Title>Sobre o Aplicativo</Title>
 
-          <Text variant="bodyMedium" style={styles.paragraph}>
-            Este aplicativo foi desenvolvido para gerenciar e consultar CEPs usando React Native,
-            React Navigation, AsyncStorage e APIs públicas.
+          <Text style={styles.text}>
+            Este aplicativo foi desenvolvido para gerenciar e consultar CEPs utilizando tecnologias como React Native, React Navigation e AsyncStorage.
           </Text>
 
-          <Text variant="bodyMedium" style={styles.paragraph}>
+          <Text style={styles.text}>
+            As consultas de CEP são feitas através da API pública BrasilAPI.
+          </Text>
+
+          <Text style={styles.text}>
             Desenvolvedor: Wendel Ferreira Santos
           </Text>
 
-          <Text variant="bodyMedium" style={styles.paragraph}>
+          <Text style={styles.text}>
             Versão: 1.0.0
           </Text>
         </Card.Content>
@@ -31,7 +34,8 @@ const styles = StyleSheet.create({
   container: {
     padding: 16,
   },
-  paragraph: {
-    marginTop: 10,
+  text: {
+    marginBottom: 10,
+    fontSize: 16,
   },
 });
