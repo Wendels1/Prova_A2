@@ -45,6 +45,7 @@ export default function EditarCepScreen({ navigation, route }) {
       Alert.alert('Erro', 'Digite um CEP válido com 8 números');
       return;
     }
+    // Inicia o loading para indicar que a busca está em andamento
     setLoading(true);
 
     // Faz a requisição para a API de CEPs
@@ -131,6 +132,7 @@ export default function EditarCepScreen({ navigation, route }) {
         value={logradouro}
         onChangeText={setLogradouro}
         style={styles.input}
+        // Desabilita o campo se estiver carregando
         disabled={loading}
       />
       <TextInput

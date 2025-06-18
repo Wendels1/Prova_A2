@@ -2,6 +2,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Implementação do serviço de CEPs usando AsyncStorage
+// Define a chave de armazenamento para os CEPs
+// Esta chave será usada para armazenar e recuperar os dados dos CEPs
+// É importante que seja única para evitar conflitos com outros dados
 const STORAGE_KEY = '@ceps';
 
 // Funções do serviço
